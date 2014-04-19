@@ -21,9 +21,7 @@ Embertodos.Todo.FIXTURES = [
    isCompleted: false
  }
 ];
-//Embertodos.Store.createRecord( Embertodos.Todo, Embertodos.Todo.FIXTURES);
-//Embertodos.Store.loadMany(Embertodos.Todo, [1,2,3], Embertodos.Todo.FIXTURES);
-//Embertodos.ApplicationAdapter.createRecord( Embertodos.Store, Embertodos.Todo, Embertodos.Todo.FIXTURES[0]);
+
 Embertodos.store.loadMany( Embertodos.Todo, Embertodos.Todo.FIXTURES);
 
 Embertodos.Todo.FIXTURES.forEach(function( fixture ) {

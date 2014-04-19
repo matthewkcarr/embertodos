@@ -8,23 +8,26 @@ Embertodos.TodosRoute = Ember.Route.extend({
 	/*setupController: function(controller, model) {
 		controller.set('todos', model);
 	},*/
-  collection: function() {
+  /*collection: function() {
     return this.store.all( Embertodos.Todo );
   },
 	controllerName: 'todos',
+	*/
 	setupController: function(controller, model) {
-		console.log('called');
-		Embertodos.store.all(Embertodos.Todo).forEach(function(item) {
-			console.log(item);
-		});
+		//console.log('called');
+		//Embertodos.store.all(Embertodos.Todo).forEach(function(item) {
+	//		console.log(item);
+	//	});
 		controller.set('model', Embertodos.store.all(Embertodos.Todo) );
-		controller.set('content', Embertodos.store.all(Embertodos.Todo) );
+		//controller.set('content', Embertodos.store.all(Embertodos.Todo) );
 		//console.log(controller.content);
 	},
-  todos: function() {
+	
+  /*todos: function() {
     return this.store.all( Embertodos.Todo );
-  }, 
+  },*/ 
+	/* why do we need this ? */
   model: function() {
-    return this.store.all( Embertodos.Todo );
+    return this.store.all(Embertodos.Todo);
   } 
 });
