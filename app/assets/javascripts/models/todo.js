@@ -22,7 +22,7 @@ Embertodos.Todo.FIXTURES = [
  }
 ];
 
-Embertodos.store.loadMany( Embertodos.Todo, Embertodos.Todo.FIXTURES);
+//this.store.loadMany( Embertodos.Todo, Embertodos.Todo.FIXTURES);
 
 Embertodos.Todo.FIXTURES.forEach(function( fixture ) {
 	console.log(fixture);

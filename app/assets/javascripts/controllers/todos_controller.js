@@ -22,7 +22,7 @@ Embertodos.TodosController = Ember.ArrayController.extend({
       if (!title.trim()) { return; }
 
       // Create the new Todo model
-      var todo = Embertodos.store.createRecord(Embertodos.Todo, {
+			var todo = this.store.createRecord(Embertodos.Todo, {
         title: title,
         isCompleted: false
       });
