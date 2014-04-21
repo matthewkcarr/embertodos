@@ -12,5 +12,6 @@ Embertodos.EditTodoView = Ember.TextField.extend({
 });
 
 Ember.Handlebars.helper('edit-todo', Embertodos.EditTodoView);
-
-
+Ember.Handlebars.helper('debug', function(the_string){
+    console.log(the_string);
+});
